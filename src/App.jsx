@@ -13,10 +13,7 @@ import img6 from "./assets/img6.png";
 const Dashboard = () => {
   return (
     <div className="flex h-screen bg-gray-900 text-white p-4">
-      {/* Sidebar */}
-{/* Sidebar */}
-{/* Sidebar - Optimized for Screen Fit */}
-{/* Sidebar */}
+      
 <aside className="w-1/4 bg-gray-800 p-6 rounded-2xl flex flex-col gap-6 shadow-lg border-l-4 border-purple-500">
   <h1 className="text-3xl font-bold text-purple-400">sync</h1>
 
@@ -50,7 +47,7 @@ const Dashboard = () => {
     <button className="mt-3 text-sm text-purple-300 hover:text-purple-500">See all</button>
   </div>
 
-  {/* Power Consumption */}
+  
   <div className="bg-gray-700 p-6 rounded-xl shadow-md">
     <h2 className="text-lg font-bold text-purple-300">Power Consumption</h2>
 
@@ -72,7 +69,7 @@ const Dashboard = () => {
  
   
 
-  {/* To-Do List */}
+ 
   <div className="bg-gray-700 p-6 rounded-xl shadow-md">
     <h2 className="text-lg font-bold text-purple-300">To-Do List</h2>
     <ul className="mt-3 text-sm space-y-2">
@@ -91,7 +88,7 @@ const Dashboard = () => {
     </ul>
   </div>
 
-  {/* User Profile */}
+  
   <div className="flex items-center gap-4 bg-gray-700 p-4 rounded-xl shadow-md">
   <img src={img6} alt="img6" className="w-8 h-8 rounded-full" />
     <div>
@@ -103,10 +100,9 @@ const Dashboard = () => {
 
 
 
-      {/* Main Content */}
       <main className="flex-1 p-6">
         <h2 className="text-4xl font-bold">Hi Ann!</h2>
-        {/* Room Tabs */}
+        
         <div className="flex gap-4 mt-4 bg-gradient-to-br from-blue-900 to-gray-900 p-3 rounded-xl shadow-lg backdrop-blur-md">
   {["Living Room", "Kitchen", "Bathroom", "Bedroom", "Backyard", "Terrace"].map((room) => (
     <button
@@ -126,7 +122,7 @@ const Dashboard = () => {
   className="mt-6 bg-gray-700 p-4 rounded-xl flex items-center gap-4 w-auto h-1/2 relative"
   style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", backgroundPosition: "center" }}
 >
-  {/* Weather Overlay */}
+ 
   <div className="absolute top-4 left-4 flex flex-col gap-2 bg-gray-900 bg-opacity-50 p-3 rounded-lg shadow-md">
     <div className="flex items-center gap-2 text-white">
       <WiDayCloudy size={24} className="text-yellow-300" /> <span>16°C</span>
@@ -138,24 +134,20 @@ const Dashboard = () => {
       <WiRaindrop size={20} className="text-blue-400" /> <span>Rain: 60%</span>
     </div>
   </div>
- {/* Weather & Music Section */}
+
 
  
 
-  {/* 🎵 Music Player Overlay */}
   <div className="absolute left-4 bottom-4 bg-gray-800/80 backdrop-blur-lg text-white px-4 py-2 rounded-xl flex items-center w-80 h-20 shadow-lg">
-    {/* Album Cover */}
-    {/* 🎵 Music Player Overlay (Properly Aligned) */}
-
-  {/* Album Cover */}
+   
   <img src={img5} alt="Album Cover" className="w-14 h-14 rounded-lg mr-3 object-cover" />
 
-  {/* Song Details + Progress Bar (Flex Column) */}
+
   <div className="flex-1 flex flex-col justify-center">
     <p className="text-start font-semibold leading-tight">Oops! I did it again</p>
     <p className="text-xs text-gray-400">BRITNEY SPEARS</p>
 
-    {/* Progress Bar */}
+   
     <div className="relative mt-1">
       <input 
         type="range" 
@@ -171,7 +163,7 @@ const Dashboard = () => {
     
   </div>
 
-  {/* Music Icon (Aligned Right) */}
+
  
 </div>
 
@@ -179,7 +171,7 @@ const Dashboard = () => {
 
 </div>
 
-        {/* Device Containers */}
+        
         <div className="mt-6 grid grid-cols-3 gap-4">
   {[
     { img: img4, name: "Living Lamp" },
@@ -199,12 +191,12 @@ const Dashboard = () => {
     >
       <div className="absolute inset-0 bg-black opacity-30 rounded-2xl"></div>
 
-      {/* Device Name */}
+  
       <p className="relative z-10 text-lg font-semibold text-white mb-4">
         {device.name}
       </p>
 
-      {/* Stylish Power Button */}
+   
       <button
         className="relative z-10 bg-gradient-to-r from-gray-900 to-gray-700 
                    text-white px-6 py-3 rounded-lg w-full flex justify-center items-center 
